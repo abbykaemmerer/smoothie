@@ -1,0 +1,25 @@
+{
+  "name": "Smoothie Generator",
+  "version": "1.0.0",
+  "description": "--- ###This app will generate smoothies based on certain ingredients",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbykaemmerer/smoothie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbykaemmerer/smoothie/issues"
+  },
+  "homepage": "+https://github.com/abbykaemmerer/smoothie.git#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {}
+}
