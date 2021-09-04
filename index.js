@@ -1,4 +1,4 @@
-const smoothielist = [
+const smoothieList = [
     { 'name': 'Green Energy',
         'ingredients': [ 'Coconut milk', 'Rolled oats', 'Coconut flakes', 'Cantaloupe', 'Lime juice', 'Kale' ]
     },
@@ -24,9 +24,13 @@ const smoothielist = [
     }
 ];
 
-
 function displayIngredient(){
     let textInput = document.getElementById('ingredient').value;
 
-    alert(textInput);
+    document.getElementById('smoothieList').innerHTML = textInput;
+    console.log(textInput);
 }
+
+document.getElementById('myBtn').addEventListener('click', function clickClick(){
+    displayIngredient();
+});
