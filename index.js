@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable arrow-parens */
 
 
@@ -45,14 +46,16 @@ function displayIngredient(){
 
         listOfNames.push(displayedList);
         console.log(listOfNames);
-        // displayedList.join(',');
-
-        // listOfNames.push(displayedList);
-
-        console.log(displayedList);
-
-        document.getElementById('list-with-input').innerHTML = listOfNames;
     }
+
+    let list = document.getElementById('listWithInput');
+
+    listOfNames.forEach((item) => {
+        let li = document.createElement('li');
+
+        li.innerText = item;
+        list.appendChild(li);
+    });
 }
 
 document.getElementById('myBtn').addEventListener('click', function clickClick(){
