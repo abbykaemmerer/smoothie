@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Smoothie Generator</h1>
-    <div>
-        <form>
-            <label>Type in ingredient here:</label>
-            <input type="text" id="ingredient" name="ingredient" size="10">
-            <button type="button" id="myBtn">Hey</button>
-        </form>
-    </div>
-    <div>
-        <h3>Some guud smoothies with this ingredient:</h3>
-        <ul id='listWithInput'>
+<body class="container">
+    <div class="left">
+        <h1>Recipes</h1>
+        <hr>
+        <ul>
+            <a href="">Green Energy</a>
+            <a href="">Banana Oats</a>
+            <a href="">Mango Lime Chill</a>
+            <a href="">Peanut Butter Bliss</a>
+            <a href="">Caramel Apple</a>
+            <a href="">Chocolate Cherry</a>
         </ul>
+    </div>
+    <div class="right">
+        <h1>Smoothie Generator</h1>
+        <div class="form">
+            <form>
+                <label>What's your favorite smoothie ingredient?</label>
+                <input type="text" id="ingredient" name="ingredient" size="10">
+                <div id="blend"><div>BLEND</div></div>
+            </form>
+        </div>
+        <div class="smoothieList">
+            <h3>Check out these guud smoothies with this ingredient:</h3>
+            <ul id='listWithInput'>
+            </ul>
+        </div>
 
     </div>
     <script src="index.js"></script>

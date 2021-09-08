@@ -1,7 +1,5 @@
 /* eslint-disable func-names */
 /* eslint-disable arrow-parens */
-
-
 /* eslint-disable arrow-body-style */
 
 const smoothieList = [
@@ -58,6 +56,6 @@ function displayIngredient(){
     });
 }
 
-document.getElementById('myBtn').addEventListener('click', function clickClick(){
+document.getElementById('blend').addEventListener('click', function clickClick(){
     displayIngredient();
 });
