@@ -1,5 +1,11 @@
+/* eslint-disable arrow-parens */
+
+
+/* eslint-disable arrow-body-style */
+
 const smoothieList = [
-    { 'name': 'Green Energy',
+    {
+        'name': 'Green Energy',
         'ingredients': [ 'Coconut milk', 'Rolled oats', 'Coconut flakes', 'Cantaloupe', 'Lime juice', 'Kale' ]
     },
     {
@@ -27,8 +33,26 @@ const smoothieList = [
 function displayIngredient(){
     let textInput = document.getElementById('ingredient').value;
 
-    document.getElementById('smoothieList').innerHTML = textInput;
-    console.log(textInput);
+    let smoothieWithSelectedIngredient = smoothieList.filter(smoothie => {
+        return smoothie.ingredients.includes(textInput);
+    });
+
+    let listOfNames = [];
+
+
+    for(let i = 0; i < smoothieWithSelectedIngredient.length; i++){
+        let displayedList = smoothieWithSelectedIngredient[i].name;
+
+        listOfNames.push(displayedList);
+        console.log(listOfNames);
+        // displayedList.join(',');
+
+        // listOfNames.push(displayedList);
+
+        console.log(displayedList);
+
+        document.getElementById('list-with-input').innerHTML = listOfNames;
+    }
 }
 
 document.getElementById('myBtn').addEventListener('click', function clickClick(){
